@@ -1,0 +1,19 @@
+<manifest>
+    <!-- Remotes -->
+    <remote name="6781-dev" fetch="https://github.com/xiaomi-mt6781-devs" revision="arrow-13.0" />
+
+    <!-- Device / Kernel prebuilts-->
+    <project path="device/xiaomi/viva" name="android_device_xiaomi_viva" remote="6781-dev" />
+    <project path="device/xiaomi/viva-kernel" name="android_device_xiaomi_viva-kernel" remote="6781-dev" />
+    <remove-project name="android_device_mediatek_sepolicy_vndr" />
+    <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="6781-dev" />
+
+    <!-- Hardware -->
+    <project path="hardware/xiaomi" name="ArrowOS-Devices/android_hardware_xiaomi" remote="github" revision="arrow-13.0" />
+    
+    <!-- Vendor -->
+    <project path="vendor/xiaomi/viva" name="android_vendor_xiaomi_viva" remote="6781-dev" />
+
+    <!-- FMRadio -->
+    <project path="packages/apps/MtkFmRadio" name="mt6768-dev/android_packages_apps_MtkFmRadio" remote="github" revision="lineage-20" />
+</manifest>
