@@ -1,0 +1,13 @@
+<manifest>
+    <!-- Remotes -->
+    <remote name="lineageos" fetch="https://github.com/LineageOS"
+        revision="lineage-20" />
+
+    <!-- NFC Repositories -->
+    <project path="vendor/nxp/nfc" name="LineageOS/android_vendor_nxp_nfc" remote="github" />
+    <project path="vendor/nxp/secure_element" name="LineageOS/android_vendor_nxp_secure_element"
+        remote="github" />
+    <project path="vendor/nxp/secure_element_extns"
+        name="LineageOS/android_vendor_nxp_secure_element_extns" remote="github" />
+
+</manifest>
